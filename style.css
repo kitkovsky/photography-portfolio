@@ -27,10 +27,11 @@ html {
   --header3: 3rem;
   --header4: 2.4rem;
   --text: 2.5rem;
-  --big: 2.4rem;
+  --big: 6rem;
   --special-colour: #906272;
   --main-colour: #414141;
   --grey-text: #525252;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -288,6 +289,78 @@ nav {
   margin-top: 2rem;
 }
 
+/* contact section */
+#contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact img {
+  flex: 1 1 40rem;
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper label {
+  display: block;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  background-color: var(--main-colour);
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--special-colour);
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-colour);
+}
+
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+
+/* footer section */
+footer {
+  background: var(--main-colour);
+  color: white;
+  display: flex;
+  padding: 2rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h4 {
+  flex: 5 1 40rem;
+}
+
 /* media queries */
 @media screen and (max-width: 842px) {
   #hero {
@@ -379,5 +452,20 @@ nav {
 
   .gallery-header {
     display: none;
+  }
+
+  /* contact section */
+  #contact img {
+    display: none;
+  }
+
+  footer ul {
+    order: 1;
+  }
+
+  footer h4 {
+    order: 2;
+    text-align: center;
+    padding: 1rem;
   }
 }
