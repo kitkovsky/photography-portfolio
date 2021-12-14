@@ -100,6 +100,7 @@ nav {
 
 #logo {
   flex: 1 1 20rem;
+  font-size: 3rem;
 }
 
 .main-header {
@@ -159,7 +160,7 @@ nav {
   left: 40%;
 }
 
-.hero-maria {
+.hero-marie {
   height: 100%;
   width: 100%;
   object-fit: cover;
