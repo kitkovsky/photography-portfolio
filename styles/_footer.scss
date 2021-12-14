@@ -1,0 +1,26 @@
+/* footer section */
+footer {
+  background: var(--main-colour);
+  color: white;
+  display: flex;
+  padding: 2rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h4 {
+  flex: 5 1 40rem;
+}
