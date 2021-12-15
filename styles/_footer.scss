@@ -10,7 +10,7 @@ footer {
 
 footer ul {
   display: flex;
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,5 +22,18 @@ footer ul li a {
 }
 
 footer h4 {
-  flex: 5 1 40rem;
+  flex: 5 1 20rem;
+}
+
+/* media queries */
+@media screen and (max-width: 1050px) {
+  footer {
+    h4 {
+      display: none;
+    }
+
+    ul {
+      justify-content: space-evenly;
+    }
+  }
 }

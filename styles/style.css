@@ -119,16 +119,13 @@ nav {
   flex: 2 1 40rem;
   text-align: center;
 }
-
 .hero-introduction p {
   padding: 5rem 10rem;
   color: var(--grey-text);
 }
-
 .hero-introduction h2 {
   padding-top: 3rem;
 }
-
 .hero-introduction a {
   padding: 2rem 8rem;
   border: 3px solid black;
@@ -211,7 +208,6 @@ nav {
     display: block;
     cursor: pointer;
   }
-
   .burger span {
     padding: 0.2rem 2rem;
     background: var(--grey-text);
@@ -231,7 +227,6 @@ nav {
     align-items: center;
     transition: transform 0.7s ease;
   }
-
   .nav-links a {
     color: white;
     font-size: var(--header3);
@@ -261,6 +256,11 @@ nav {
     overflow-y: hidden;
   }
 }
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
 /* about */
 #about {
   min-height: 100vh;
@@ -274,16 +274,13 @@ nav {
   background: var(--main-colour);
   color: white;
 }
-
 .about-text div {
   padding: 3rem 8rem;
 }
-
 .about-text h3 {
   padding: 2rem 0rem;
   font-family: "Ruhl Medium";
 }
-
 .about-text h2 {
   padding-top: 3rem;
   font-family: "Vibes";
@@ -298,7 +295,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .about-image h5 {
   position: absolute;
   top: 20%;
@@ -325,7 +321,6 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   position: relative;
 }
-
 #gallery img {
   width: 100%;
   height: 100%;
@@ -351,11 +346,9 @@ nav {
   color: white;
   text-align: center;
 }
-
 .gallery-header h2 {
   font-size: 4rem;
 }
-
 .gallery-header p {
   margin-top: 2rem;
 }
@@ -365,7 +358,6 @@ nav {
   #gallery {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
-
   #gallery img {
     grid-row: auto;
     grid-column: auto;
@@ -381,19 +373,16 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
-
 #contact img {
-  flex: 1 1 40rem;
+  flex: 1 1 30rem;
 }
 
 .form-wrapper {
-  flex: 3 1 40rem;
+  flex: 3 1 30rem;
 }
-
 .form-wrapper label {
   display: block;
 }
-
 .form-wrapper input {
   display: block;
   margin: 3rem 0rem;
@@ -402,7 +391,6 @@ nav {
   border: none;
   padding: 1rem;
 }
-
 .form-wrapper button {
   padding: 1rem 8rem;
   background: var(--special-colour);
@@ -410,17 +398,20 @@ nav {
   border: none;
   width: 100%;
 }
-
 .form-wrapper span {
   font-size: var(--big);
   color: var(--special-colour);
 }
-
 .form-wrapper h2 {
   margin: 5rem 0rem;
 }
 
 /* media queries */
+@media screen and (max-width: 1050px) {
+  #contact img {
+    display: none;
+  }
+}
 @media screen and (max-width: 842px) {
   #contact img {
     display: none;
@@ -448,7 +439,7 @@ footer {
 
 footer ul {
   display: flex;
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -460,7 +451,17 @@ footer ul li a {
 }
 
 footer h4 {
-  flex: 5 1 40rem;
+  flex: 5 1 20rem;
+}
+
+/* media queries */
+@media screen and (max-width: 1050px) {
+  footer h4 {
+    display: none;
+  }
+  footer ul {
+    justify-content: space-evenly;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

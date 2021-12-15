@@ -10,20 +10,20 @@
   justify-content: space-around;
   background: var(--main-colour);
   color: white;
-}
 
-.about-text div {
-  padding: 3rem 8rem;
-}
+  div {
+    padding: 3rem 8rem;
+  }
 
-.about-text h3 {
-  padding: 2rem 0rem;
-  font-family: "Ruhl Medium";
-}
+  h3 {
+    padding: 2rem 0rem;
+    font-family: "Ruhl Medium";
+  }
 
-.about-text h2 {
-  padding-top: 3rem;
-  font-family: "Vibes";
+  h2 {
+    padding-top: 3rem;
+    font-family: "Vibes";
+  }
 }
 
 .about-image {
@@ -34,15 +34,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.about-image h5 {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  letter-spacing: 1rem;
+  h5 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
 }
 
 /* media queries */
@@ -55,4 +55,3 @@
     display: none;
   }
 }
-
